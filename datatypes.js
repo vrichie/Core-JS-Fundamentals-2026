@@ -1,32 +1,66 @@
-//strings
-let name ="Jake";
-let numString ="67";
 
-//numbers
-let age=23;
-let height=6.2;
+// strings
+let name='Jake';
 
-//large Integers
-let a =72742985294529n;
-let b = BigInt(1234567890977654321);
+// numbers
+// int float double
+let age=45;
+// age=53.5;
+let fileSize=4875689576587878n;
+let num2=BigInt(568968545456);
 
 //boolean
-let isActive=true;
-let isDisabled = false;
+let isStudent=true;
+let isInSession=false;
 
-//objects
-let student = {name:"Jane",age:24,course:"Computer science"}
+//objects syntax -> { key:value,key:value}
+const student={name:"Jane",age:6,marks:[76,34,53],course:{name:'comp sci'}}
+// console.log(student)
 
-//array of object
-let marks = [23,4,43,54,54,78];
+// array
+const marks=[34,56,45,67];
+console.log("Before",marks)
+marks[0]=90;
+// console.log(marks)
 
 //Date object
-let today=new Date();
+let today=new Date().getFullYear();
+// console.log(today);
 
 //undefined
 let x;
-let y;
+// console.log("value of x ",x);
+x=67;
 
 //null
-let n = null;
+let y=null;
 
+// Operators
+// = assigning
+// arithmetic operators
+// +,-,*,/
+// **= exponential ,%= Modulus/remainder,++=increment by 1, --=decrement by 1
+let num=30;
+let num22=--num;
+// num=num+num22;
+// num=num-num22;
+// num-=num22;
+// num=num%num22;
+num%=num22;
+// num+=num22;
+// console.log(num)
+// let isOdd=12%2;
+// if(isOdd==1){
+// console.log("number is odd")
+// }else{
+// console.log("number is even")
+// }
+
+//Logical operators
+// AND=&&, OR=||,NOT=!
+
+if(name=='Jake' && age==45 ){
+console.log("Hello Jake")
+}else{
+console.log("Not Jake")
+}
